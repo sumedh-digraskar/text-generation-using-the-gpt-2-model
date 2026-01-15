@@ -1,7 +1,7 @@
 import streamlit as st
 from transformers import AutoTokenizer, AutoModelForCausalLM
 
-# Load model (cached so it loads only once)
+# Load model 
 @st.cache_resource
 def load_model():
     model_name = "gpt2"
